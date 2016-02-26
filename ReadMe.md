@@ -24,7 +24,7 @@
 
 >   结果如图：
 
-![image](https://github.com/zhangkaiyang/Dnsfilter/blob/master/dig2.png)
+>   ![image](https://github.com/zhangkaiyang/Dnsfilter/blob/master/dig2.png)
 
 # 接口
 >   dnsfilter.c为main函数所在文件。
