@@ -23,6 +23,7 @@
 ![image](https://github.com/zhangkaiyang/Dnsfilter/blob/master/dnsfilter1.png)
 
 >   结果如图：
+
 ![image](https://github.com/zhangkaiyang/Dnsfilter/blob/master/dig2.png)
 
 # 接口
@@ -30,13 +31,16 @@
     在main函数中创建多线程，每个多线程堵塞等待ip数据包的到来。
     多线程接收到数据包后首先调用dns_analyze.
     c文件。
+
 >   dns_analyze.
-    c文件中函数提取出域名及ip，然后与文件系统进行交互获得相关的数据。    
+    c文件中函数提取出域名及ip，然后与文件系统进行交互获得相关的数据。
+
 >   若需要修改原dns报文，则调用dns_modify.c函数传入数据包地址及ip即可，修改后再调用udpcheck.c中函数将udp报文的校验和置为0。
 
 # 输出
 >   1.输出文件data.log中保存着所有接受到的dns报文中提取出来的域名及ip，可作为数据源。
-    2.输出文件error.log中保存着程序运行过程中出现的错误及发生错误的时间。
+
+>   2.输出文件error.log中保存着程序运行过程中出现的错误及发生错误的时间。
 
 # 更多
 >   如程序有问题可联系本人QQ:787653759。
